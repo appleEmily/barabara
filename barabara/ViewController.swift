@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBAction func start() {
+    }
+    
+    
+    @IBAction func ranking() {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

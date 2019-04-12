@@ -27,6 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="ranking" destination="BYZ-38-t0r" eventType="touchUpInside" id="1TK-Yu-WAT"/>
                                     <segue destination="Kkh-4f-kXs" kind="presentation" id="qaL-Wh-ugY"/>
                                 </connections>
                             </button>
@@ -53,11 +54,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="1P2-A1-rfu"/>
                                     <segue destination="aZu-HM-IWb" kind="presentation" id="ZiR-Dh-Wh3"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.53534311059999995" green="0.97339767219999995" blue="1" alpha="0.68463720029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.98431372549999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -81,6 +83,9 @@
                                 <state key="normal" title="topへ">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="toTop" destination="aZu-HM-IWb" eventType="touchUpInside" id="ovR-M0-1Ye"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyx-x7-EJ3">
                                 <rect key="frame" x="273" y="31" width="75" height="37"/>
@@ -90,6 +95,9 @@
                                 <state key="normal" title="retry">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="retry" destination="aZu-HM-IWb" eventType="touchUpInside" id="6Rt-7z-oww"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRX-t2-vQk">
                                 <rect key="frame" x="133" y="535" width="109" height="43"/>
@@ -99,6 +107,9 @@
                                 <state key="normal" title="stop">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="stop" destination="aZu-HM-IWb" eventType="touchUpInside" id="eu5-nd-fuI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAV-fm-5yB">
                                 <rect key="frame" x="110" y="438" width="154" height="40"/>
@@ -208,11 +219,19 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="back" destination="Kkh-4f-kXs" eventType="touchUpInside" id="e8b-TI-zXJ"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.53534311059999995" green="0.97339767219999995" blue="1" alpha="0.68463720029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.98431372549999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="t0D-I0-wTw"/>
                     </view>
+                    <connections>
+                        <outlet property="rankingLabel1" destination="Fej-Ej-c5E" id="VLq-HX-GGX"/>
+                        <outlet property="rankingLabel2" destination="hCF-Sr-gRQ" id="AOy-yP-lIE"/>
+                        <outlet property="rankingLabel3" destination="4BY-zb-XZz" id="5SO-mT-4KN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufM-fD-52s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
