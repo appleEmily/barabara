@@ -66,14 +66,12 @@ class GameCollectionViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-//    func start() {
-    
-//    @objc func up() {
-    @objc func start() {
+
+    func start() {
         showScore.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 0.005,
                                      target: self,
-                                     selector: #selector(self.start),
+                                     selector: #selector(self.up),
                                      userInfo: nil, repeats: true)
         timer.fire()
     }
@@ -82,11 +80,11 @@ class GameCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         positionX = [width/2, width/2, width/2]
-        self.upup()
+        self.up()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func upup() {
+    @objc func up() {
         for i in 0..<3 {
             if positionX[i] > width || positionX[i] < 0 {
                 dx[i] = dx[i] * (-1)
