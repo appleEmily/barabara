@@ -80,7 +80,7 @@ class GameCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         positionX = [width/2, width/2, width/2]
-        self.up()
+        self.start()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
